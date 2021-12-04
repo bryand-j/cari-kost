@@ -1,0 +1,26 @@
+CRITICAL - 2021-11-01 02:10:15 --> syntax error, unexpected token "}"
+#0 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\Router\Router.php(160): CodeIgniter\Router\Router->autoRoute('Login/out')
+#1 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(702): CodeIgniter\Router\Router->handle('Login/out')
+#2 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\stun...')
+#6 {main}
+CRITICAL - 2021-11-01 02:11:53 -->  route cannot be found while reverse-routing.
+#0 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\APP\CI4\stunting\app\Controllers\Login.php(21): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Login->out()
+#3 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\APP\CI4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\stun...')
+#7 {main}
+CRITICAL - 2021-11-01 02:14:48 -->  route cannot be found while reverse-routing.
+#0 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\APP\CI4\stunting\app\Controllers\Login.php(44): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Login->in()
+#3 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\APP\CI4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\APP\CI4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\stun...')
+#7 {main}

@@ -1,0 +1,357 @@
+CRITICAL - 2021-08-04 00:07:51 --> syntax error, unexpected '"nm_kategori"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\APPS\\WEB-APP...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 00:08:13 --> Undefined variable: BahanModel
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\KategoryBerita.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 70, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\KategoryBerita->update()
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KategoryBerita))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-04 01:54:17 --> Class 'App\Models\KategoriEModel' not found
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\KategoriEdukasi->table()
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KategoriEdukasi))
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#5 {main}
+CRITICAL - 2021-08-04 08:49:47 --> Undefined variable: session
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Berita.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 57, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Berita->upload()
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Berita))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-04 10:56:58 --> Undefined variable: session
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Berita.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 57, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Berita->upload()
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Berita))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-04 11:04:06 --> Undefined variable: session
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Berita.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 57, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Berita->upload()
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Berita))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-04 11:06:35 --> Undefined variable: session
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Berita.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 57, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Berita->upload()
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Berita))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-04 12:07:22 --> Undefined variable: kategori
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\berita\formEdit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 27, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/berita/fo...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Berita.php(33): view('admin/berita/fo...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Berita->formEdit('9')
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Berita))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 12:08:21 --> Undefined variable: kategori
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 31, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Berita->formEdit('9')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Berita))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-04 12:11:32 --> Undefined variable: kategori
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 31, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Berita->formEdit('9')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Berita))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-04 14:52:03 --> Table 'db_stunting.kategori_bahan' doesn't exist
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\app\Models\BahanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\BahanEdukasi.php(22): App\Models\BahanModel->getAll()
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\BahanEdukasi->table()
+#7 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\BahanEdukasi))
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#11 {main}
+CRITICAL - 2021-08-04 14:52:21 --> Table 'db_stunting.kategori_bahan' doesn't exist
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\app\Models\BahanModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\BahanEdukasi.php(22): App\Models\BahanModel->getAll()
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\BahanEdukasi->table()
+#7 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\BahanEdukasi))
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#11 {main}
+CRITICAL - 2021-08-04 15:41:10 --> Invalid file: admin/AksiKonvergensi/subheader.php
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/AksiKonve...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/AksiKonve...', Array, true)
+#2 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\aksi\index.php(5): view('admin/AksiKonve...')
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/aksi/inde...', Array, true)
+#5 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\AksiKonvergensi.php(14): view('admin/aksi/inde...', Array)
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksiKonvergensi->index()
+#7 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksiKonvergensi))
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#11 {main}
+CRITICAL - 2021-08-04 15:42:01 --> Undefined variable: Bahan
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\aksi\table.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 12, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/aksi/tabl...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\AksiKonvergensi.php(22): view('admin/aksi/tabl...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksiKonvergensi->table()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksiKonvergensi))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 15:42:21 --> Undefined index: deskripsi
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\aksi\table.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\APPS\\WEB-APP...', 16, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/aksi/tabl...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\AksiKonvergensi.php(22): view('admin/aksi/tabl...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksiKonvergensi->table()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksiKonvergensi))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 15:50:17 --> Undefined index: id_bahan
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\aksi\formEdit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\APPS\\WEB-APP...', 11, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/aksi/form...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\AksiKonvergensi.php(31): view('admin/aksi/form...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksiKonvergensi->formEdit('2')
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksiKonvergensi))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 15:50:19 --> Undefined index: id_bahan
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\aksi\formEdit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\APPS\\WEB-APP...', 11, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/aksi/form...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\AksiKonvergensi.php(31): view('admin/aksi/form...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksiKonvergensi->formEdit('2')
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksiKonvergensi))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 15:50:24 --> Undefined index: id_bahan
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\aksi\formEdit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\APPS\\WEB-APP...', 11, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/aksi/form...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\AksiKonvergensi.php(31): view('admin/aksi/form...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksiKonvergensi->formEdit('2')
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksiKonvergensi))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 16:15:44 --> Class 'App\Models\IndikatorModel' not found
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\IndikatorPencegahan->table()
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\IndikatorPencegahan))
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#5 {main}
+CRITICAL - 2021-08-04 16:48:31 --> Invalid file: admin/publikasi/index.php
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/publikasi...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/publikasi...', Array, true)
+#2 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Publikasi.php(15): view('admin/publikasi...', Array)
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Publikasi->index()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Publikasi))
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#8 {main}
+CRITICAL - 2021-08-04 16:57:05 --> Call to undefined method App\Models\PublikasiModel::getAll
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Publikasi.php(21): CodeIgniter\Model->__call('getAll', Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Publikasi->table()
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Publikasi))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-04 16:57:27 --> Call to undefined method App\Models\PublikasiModel::getAll
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Publikasi.php(21): CodeIgniter\Model->__call('getAll', Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Publikasi->table()
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Publikasi))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-04 17:36:47 --> Undefined variable: row
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\publikasi\formEdit.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 32, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/publikasi...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Publikasi.php(32): view('admin/publikasi...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Publikasi->formEdit('2')
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Publikasi))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 17:36:50 --> Undefined variable: row
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\publikasi\formEdit.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 32, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/publikasi...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Publikasi.php(32): view('admin/publikasi...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Publikasi->formEdit('2')
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Publikasi))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 18:30:42 --> Invalid file: admin/profile/index.php
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/profile/i...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/profile/i...', Array, true)
+#2 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Profile.php(14): view('admin/profile/i...', Array)
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Profile->index()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Profile))
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#8 {main}
+CRITICAL - 2021-08-04 19:01:42 --> Undefined variable: data
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\profile\index.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 52, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/profile/i...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Profile.php(14): view('admin/profile/i...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Profile->index()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Profile))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 19:37:56 --> Class 'App\Controllers\Admin\AksiModel' not found
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Profile->update()
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Profile))
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#5 {main}
+CRITICAL - 2021-08-04 19:39:39 --> Unknown column 'updated_at' in 'field list'
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `profil`...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `profil`...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `profil`...')
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `profil`...', Array, false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Model.php(889): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Model.php(570): CodeIgniter\Model->update(Array, Array)
+#6 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\Profile.php(48): CodeIgniter\Model->save(Array)
+#7 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Profile->update()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Profile))
+#9 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#12 {main}
+CRITICAL - 2021-08-04 20:15:32 --> Invalid file: admin/user/index.php
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/user/inde...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/user/inde...', Array, true)
+#2 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\User.php(14): view('admin/user/inde...', Array)
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\User->index()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#8 {main}
+CRITICAL - 2021-08-04 20:20:35 --> Undefined index: ID_User
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\user\formEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\APPS\\WEB-APP...', 12, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/user/form...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\User.php(31): view('admin/user/form...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\User->formEdit('1')
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 20:24:08 --> Column 'username' cannot be null
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\User.php(54): CodeIgniter\Model->save(Array)
+#7 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\User->save()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#9 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#12 {main}
+CRITICAL - 2021-08-04 20:30:59 --> Class 'App\Models\PaketModel' not found
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dashboard->index()
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#5 {main}
+CRITICAL - 2021-08-04 20:50:19 --> Class 'App\Models\PegawaiModel' not found
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Login->in()
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#5 {main}
+CRITICAL - 2021-08-04 20:51:18 --> Class 'App\Models\PaketModel' not found
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dashboard->index()
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#5 {main}
+CRITICAL - 2021-08-04 21:01:31 --> Undefined index: ID_User
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\profile\index.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\APPS\\WEB-APP...', 44, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('profile/index', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\Profile.php(19): view('profile/index', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Profile->index()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
+CRITICAL - 2021-08-04 21:13:11 --> Class 'App\Models\PaketModel' not found
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dashboard->index()
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#5 {main}
+CRITICAL - 2021-08-04 21:15:39 --> Class 'App\Models\PaketModel' not found
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dashboard->index()
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#5 {main}

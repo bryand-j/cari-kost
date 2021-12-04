@@ -1,0 +1,13 @@
+CRITICAL - 2021-10-04 20:28:39 --> Table 'db_stunting.berita_indikator' doesn't exist
+#0 D:\APP\stunting\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `berita_...')
+#1 D:\APP\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `berita_...')
+#2 D:\APP\stunting\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `berita_...')
+#3 D:\APP\stunting\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `berita_...', Array, false)
+#4 D:\APP\stunting\app\Models\BeritaIndikatorModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\stunting\app\Controllers\admin\BeritaIndikator.php(22): App\Models\BeritaIndikatorModel->getAll()
+#6 D:\APP\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\BeritaIndikator->table()
+#7 D:\APP\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\BeritaIndikator))
+#8 D:\APP\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APP\\stunting...')
+#11 {main}

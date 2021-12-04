@@ -1,0 +1,32 @@
+CRITICAL - 2021-08-03 23:48:01 --> Undefined variable: title
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\KategoryBerita.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 12, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\KategoryBerita->index()
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KategoryBerita))
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#6 {main}
+CRITICAL - 2021-08-03 23:48:47 --> Invalid file: admin/konsultan/subheader.php
+#0 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/konsultan...')
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/konsultan...', Array, true)
+#2 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\kategoryB\index.php(5): view('admin/konsultan...')
+#3 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/kategoryB...', Array, true)
+#5 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\KategoryBerita.php(14): view('admin/kategoryB...', Array)
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\KategoryBerita->index()
+#7 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KategoryBerita))
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#11 {main}
+CRITICAL - 2021-08-03 23:52:50 --> Undefined variable: dataBahan
+#0 D:\APPS\WEB-APP\CI-4\stunting\app\Views\admin\kategoryB\table.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\APPS\\WEB-APP...', 11, Array)
+#1 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\APPS\\WEB-APP...')
+#2 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/kategoryB...', Array, true)
+#3 D:\APPS\WEB-APP\CI-4\stunting\app\Controllers\admin\KategoryBerita.php(22): view('admin/kategoryB...', Array)
+#4 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\KategoryBerita->table()
+#5 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KategoryBerita))
+#6 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\APPS\WEB-APP\CI-4\stunting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\APPS\WEB-APP\CI-4\stunting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\APPS\\WEB-APP...')
+#9 {main}
