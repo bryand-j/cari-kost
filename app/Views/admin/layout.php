@@ -35,6 +35,32 @@
 
 		<!--end::Layout Themes-->
 		<link rel="icon" href="<?=base_url()?>/logo/logo.png" />
+		<style>
+*::-webkit-scrollbar {
+    width: 0.8em;
+}
+ 
+*::-webkit-scrollbar-track {
+  background-color:transparent;
+  
+  
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius:100em;
+
+  
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(117, 117, 117);
+}
+*::-webkit-scrollbar-button{
+  height: 2px;
+  background-color: rgba(117, 117, 117, 0);
+}
+
+</style>
 	</head>
 
 	<!--end::Head-->

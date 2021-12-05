@@ -90,7 +90,7 @@
 		<script src="<?=base_url()?>/assets/js/pages/widgets.js"></script>
 		<script>
 		const current = location.pathname.split("/").slice(-1)[0].replace(/^\/|\/$/g, '');
-		$('.menu-nav a[href~="<?=base_url()?>/admin/' + current + '"]').parent('li').addClass('menu-item-active');
+		$('.menu-nav a[href~="<?=base_url()?>/Admin/' + current + '"]').parent('li').addClass('menu-item-active');
 
 		$("#bry-modal").draggable({
 		    handle:".modal-header",

@@ -9,7 +9,7 @@
 			<div class="modal fade"  id="load-m" data-backdrop="static" tabindex="-2" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true" >
 				<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
 					<div class="modal-content">
-						<div class="modal-body row justify-content-center align-items-center" data-scroll="true" data-height="200">
+						<div class="modal-body row justify-content-center align-items-center" data-scroll="true" data-height="100">
 							<h5 class="mr-2">Memuat... </h5>
 							<div class="spinner spinner-primary "> </div>
 							

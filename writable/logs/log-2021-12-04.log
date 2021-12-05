@@ -13,3 +13,13 @@ CRITICAL - 2021-12-04 05:52:46 --> syntax error, unexpected token "if", expectin
 #11 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #12 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
 #13 {main}
+CRITICAL - 2021-12-04 22:06:51 --> Invalid file: login/index.php
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/index.php')
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('login/index', Array, true)
+#2 D:\APP\CI4\cari-kost\app\Controllers\Login.php(14): view('login/index', Array)
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Login->index()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#8 {main}

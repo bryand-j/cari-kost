@@ -39,7 +39,7 @@
 							<!--begin::Menu Nav-->
 							<ul class="menu-nav">
 								<li class="menu-item" aria-haspopup="true">
-									<a href="<?=base_url()?>/admin/Dashboard" class="menu-link">
+									<a href="<?=base_url()?>/Admin/Dashboard" class="menu-link">
 										<i class="menu-icon flaticon2-poll-symbol"></i>
 										<span class="menu-text">Dashboard</span>
 									</a>
@@ -49,19 +49,19 @@
 									<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 								</li>
 								<li class="menu-item" aria-haspopup="true">
-									<a href="<?=base_url()?>/admin/Kos" class="menu-link">
+									<a href="<?=base_url()?>/Admin/Kost" class="menu-link">
 										<i class="menu-icon fas fa-border-all"></i>
-										<span class="menu-text">Data Kos</span>
+										<span class="menu-text">Data Kost</span>
 									</a>
 								</li>
 								<li class="menu-item" aria-haspopup="true">
-									<a href="<?=base_url()?>/admin/pemilik" class="menu-link">
+									<a href="<?=base_url()?>/Admin/Pemilik" class="menu-link">
 										<i class="menu-icon fas fa-user-tag"></i>
 										<span class="menu-text">Data Pemilik</span>
 									</a>
 								</li>
 								<li class="menu-item" aria-haspopup="true">
-									<a href="<?=base_url()?>/admin/pengguna" class="menu-link">
+									<a href="<?=base_url()?>/Admin/Pengguna" class="menu-link">
 										<i class="menu-icon fas fa-users"></i>
 										<span class="menu-text">pengguna</span>
 									</a>
@@ -71,7 +71,7 @@
 									
 								
 								<li class="menu-item" aria-haspopup="true">
-									<a href="<?=base_url()?>/admin/User" class="menu-link">
+									<a href="<?=base_url()?>/Admin/User" class="menu-link">
 										<i class="menu-icon fas fa-user-cog"></i>
 										<span class="menu-text">admin</span>
 									</a>

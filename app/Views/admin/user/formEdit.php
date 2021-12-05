@@ -28,3 +28,30 @@
 	        <button type="submit" class="btn btn-primary" id="kt_btn_1">Update</button>
 	      </div>
     	</form>
+
+
+<script>
+	$("#bry-modal").modal("show");
+	$('#toggle').click(function(event) {
+		if ($('#passworde').attr('type') =='password') {
+			$('#passworde').attr('type', 'text');
+		} 
+		else {
+			$('#passworde').attr('type', 'password');
+		}
+		$('.fa-eye , .fa-eye-slash').toggleClass('d-none');
+
+	});
+
+	$('#isi #edit-form').submit(function(event) {
+		const btn = KTUtil.getById("kt_btn_1");
+		event.preventDefault();
+		KTUtil.btnWait(btn);
+		
+		Crud.post('/admin/User/update',new FormData(this),(result)=>{
+			Dialog.toast(result.type,result.message);
+			KTUtil.btnRelease(btn);
+			getTable(tb_url);
+		})
+	});
+</script>

@@ -2,7 +2,7 @@
 
 <?=$this->section("content"); ?>
 
-<?=view('admin/user/subheader'); ?>
+<?=view('admin/kost/subheader'); ?>
 
 <div class="d-flex flex-column-fluid">
   <div class="container-fluid" >
@@ -65,7 +65,7 @@
 <!--end::Entry-->
 
 <script>
-const tb_url='/admin/User/table';
+const tb_url='<?=$base?>/table';
 
 //tampil tabel
 
@@ -75,7 +75,7 @@ getTable(tb_url);
 
 $("#add-new").click( function(e) {
 	
-	Crud.getHtml('/admin/User/formAdd',(result)=> {
+	Crud.getHtml('<?=$base?>/formAdd',(result)=> {
 		$('#isi').html(result);
 		// tambah data
 	});	
@@ -85,14 +85,14 @@ $("#add-new").click( function(e) {
 // hapus dataPaket
 
 function hapus(id) {
-	del('/admin/User/delete',id,()=>{
+	del('<?=$base?>/delete',id,()=>{
 		getTable(tb_url);
 	})
 }
 
 // tampil form edit
 function formEdit(id) {
-	Crud.getHtml('/admin/User/formEdit/'+id,(result)=> {
+	Crud.getHtml('<?=$base?>/formEdit/'+id,(result)=> {
 		$('#isi').html(result);
 	});
   	

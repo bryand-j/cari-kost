@@ -1,0 +1,174 @@
+CRITICAL - 2021-12-05 00:00:52 --> Undefined variable $User
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Kost.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 23)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Kost->table()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kost))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 00:02:05 --> Undefined variable $User
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Kost.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 23)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Kost->table()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kost))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 00:02:51 --> Undefined array key "pemilik.nama"
+#0 D:\APP\CI4\cari-kost\app\Views\admin\kost\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\APP\\CI4\\cari...', 22)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\APP\\CI4\\cari...')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('admin/kost/tabl...', Array, true)
+#4 D:\APP\CI4\cari-kost\app\Controllers\admin\Kost.php(25): view('admin/kost/tabl...', Array)
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Kost->table()
+#6 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kost))
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#10 {main}
+CRITICAL - 2021-12-05 00:04:17 --> Undefined array key "kost.nama"
+#0 D:\APP\CI4\cari-kost\app\Views\admin\kost\table.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\APP\\CI4\\cari...', 21)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\APP\\CI4\\cari...')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('admin/kost/tabl...', Array, true)
+#4 D:\APP\CI4\cari-kost\app\Controllers\admin\Kost.php(25): view('admin/kost/tabl...', Array)
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Kost->table()
+#6 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kost))
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#10 {main}
+CRITICAL - 2021-12-05 00:06:04 --> Undefined array key "id_user"
+#0 D:\APP\CI4\cari-kost\app\Views\admin\kost\table.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\APP\\CI4\\cari...', 29)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\APP\\CI4\\cari...')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('admin/kost/tabl...', Array, true)
+#4 D:\APP\CI4\cari-kost\app\Controllers\admin\Kost.php(25): view('admin/kost/tabl...', Array)
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Kost->table()
+#6 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kost))
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#10 {main}
+CRITICAL - 2021-12-05 00:21:23 --> Undefined variable $Kost
+#0 D:\APP\CI4\cari-kost\app\Views\admin\pengguna\table.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 13)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\APP\\CI4\\cari...')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('admin/pengguna/...', Array, true)
+#4 D:\APP\CI4\cari-kost\app\Controllers\admin\Pengguna.php(25): view('admin/pengguna/...', Array)
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Pengguna->table()
+#6 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#10 {main}
+CRITICAL - 2021-12-05 00:28:14 --> Undefined variable $Pengguna
+#0 D:\APP\CI4\cari-kost\app\Views\admin\pengguna\table.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 13)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\APP\\CI4\\cari...')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('admin/pengguna/...', Array, true)
+#4 D:\APP\CI4\cari-kost\app\Controllers\admin\Pemilik.php(25): view('admin/pengguna/...', Array)
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Pemilik->table()
+#6 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pemilik))
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#10 {main}
+CRITICAL - 2021-12-05 00:28:30 --> Undefined variable $Pengguna
+#0 D:\APP\CI4\cari-kost\app\Views\admin\pengguna\table.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 13)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\APP\\CI4\\cari...')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('admin/pengguna/...', Array, true)
+#4 D:\APP\CI4\cari-kost\app\Controllers\admin\Pemilik.php(25): view('admin/pengguna/...', Array)
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Pemilik->table()
+#6 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pemilik))
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#10 {main}
+CRITICAL - 2021-12-05 01:51:09 --> Undefined property: App\Controllers\Admin\Dashboard::$db
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\APP\\CI4\\cari...', 14)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 01:53:07 --> Undefined property: App\Controllers\Admin\Dashboard::$db
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\APP\\CI4\\cari...', 14)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 01:53:30 --> Undefined property: App\Controllers\Admin\Dashboard::$db
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\APP\\CI4\\cari...', 14)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 01:53:43 --> Undefined property: App\Controllers\Admin\Dashboard::$db
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\APP\\CI4\\cari...', 14)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 01:53:45 --> Undefined property: App\Controllers\Admin\Dashboard::$db
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\APP\\CI4\\cari...', 14)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 01:53:45 --> Undefined property: App\Controllers\Admin\Dashboard::$db
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\APP\\CI4\\cari...', 14)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 01:55:04 --> Undefined variable $db
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 14)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 01:55:05 --> Undefined variable $db
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 14)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 01:55:55 --> Undefined variable $db
+#0 D:\APP\CI4\cari-kost\app\Controllers\admin\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 14)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-05 01:56:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}
+CRITICAL - 2021-12-05 01:58:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}

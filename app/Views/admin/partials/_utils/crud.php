@@ -31,8 +31,10 @@
 				.done(result)
 				.fail(function(res) {
 					console.log(res);
-					$("#bry-modal").modal("hide");
 					Dialog.toast('error',`[${res.status}] `+res.statusText);
+				})
+				.always(()=>{
+					$("#bry-modal").modal("hide");
 				})
 				
 			},
