@@ -9,6 +9,8 @@
     <th>Jumlah Kamar</th>
     <th>Terisi</th>
     <th>Fasilitas</th>
+    <th>Harga</th>
+    <th>Jenis</th>
     <th>Alamat</th>
     <th>Kordinat</th>
   </tr>
@@ -22,6 +24,8 @@
 	<td><?=$row['jumlah_kamar'] ?></td>
 	<td><?=$row['terisi'] ?></td>
 	<td><?=$row['fasilitas'] ?></td>
+	<td><?=$row['harga'] ?></td>
+	<td><?=$row['jenis'] ?></td>
 	<td><?=$row['alamat'] ?></td>
 	<td><?=$row['kordinat'] ?></td>
 

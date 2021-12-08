@@ -1,7 +1,7 @@
 <?php namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
-use App\Models\PemilikModel;
+use App\Models\PenggunaModel;
 class Pemilik extends BaseController
 {
 	protected $title="Pemilik";
@@ -17,10 +17,10 @@ class Pemilik extends BaseController
 	}
 	public function table()
 	{
-		$Pemilik=new PemilikModel;
+		$Pemilik=new PenggunaModel;
 		$data=[
 
-			"Pemilik"	=>$Pemilik->findAll()
+			"Pemilik"	=>$Pemilik->pemilik()
 		];
 		return view('admin/pemilik/table',$data);
 	}

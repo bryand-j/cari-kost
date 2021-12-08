@@ -172,3 +172,33 @@ CRITICAL - 2021-12-05 01:58:26 --> Call to undefined method CodeIgniter\Database
 #3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
 #5 {main}
+CRITICAL - 2021-12-05 02:05:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}
+CRITICAL - 2021-12-05 19:44:30 --> Invalid file: login/index.php
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/index.php')
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('login/index', Array, true)
+#2 D:\APP\CI4\cari-kost\app\Controllers\Login.php(14): view('login/index', Array)
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Login->index()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#8 {main}
+CRITICAL - 2021-12-05 20:12:54 --> Undefined variable $title
+#0 D:\APP\CI4\cari-kost\app\Views\user\layout\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 8)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\APP\\CI4\\cari...')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('user/layout/ind...', Array, true)
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('user/dashboard/...', Array, true)
+#5 D:\APP\CI4\cari-kost\app\Controllers\App.php(10): view('user/dashboard/...')
+#6 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\App->index()
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#8 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#11 {main}

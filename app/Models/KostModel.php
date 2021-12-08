@@ -16,7 +16,9 @@ class KostModel extends Model
       'terisi',
       'fasilitas',
       'alamat',
-      'kordinat'
+      'kordinat',
+      'harga',
+      'jenis',
     ];
     protected $useSoftDeletes = true;
     protected $useTimestamps = true;
@@ -27,9 +29,18 @@ class KostModel extends Model
     public function getAll()
     {
         return $this->db->table('kost')
-                    ->select('kost.*,pemilik.nama as nmpemilik')
-                    ->join('pemilik','pemilik.id=kost.id_pemilik')
+                    ->select('kost.*,pengguna.nama as nmpemilik,pengguna.telepon,pengguna.email')
+                    ->join('pengguna','pengguna.id=kost.id_pemilik')
                     ->where('kost.delete_at',null)
                     ->get()->getResultArray();
+    }
+    public function favorit($id_user,$id_kost=null)
+    {
+      $builder=$this->db->table('favorit')->where('id_user',$id_user);
+      if ($id_kost) {
+        return $builder->where('id_kost',$id_kost)->get()->getNumRows();
+      }
+      return  $builder->join('kost','favorit.id_kost=kost.id')->get()->getResultArray();
+
     }
 }

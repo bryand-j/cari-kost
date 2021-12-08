@@ -6,7 +6,6 @@
     <th>Nama Pengguna</th>
     <th>Email</th>
     <th>Telepon</th>
-    <th>Alamat</th>
   </tr>
 </thead>
 <tbody id="tb-data">
@@ -16,8 +15,6 @@
 	<td><?=$row['nama'] ?></td>
 	<td><?=$row['email'] ?></td>
 	<td><?=$row['telepon'] ?></td>
-	<td><?=$row['alamat'] ?></td>
-
 </tr>
 <?php endforeach ?>
  </tbody>

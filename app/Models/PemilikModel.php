@@ -14,7 +14,6 @@ class PemilikModel extends Model
       'email',
       'no_wa',
       'password',
-      'alamat',
     ];
     protected $useSoftDeletes = true;
     protected $useTimestamps = true;
