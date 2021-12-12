@@ -2,13 +2,13 @@
 <h3>Cara install</h3>
 <ul>
 <li>Download Repositori</li>
-<li>buat database <pre><"db_kost"></pre> lalu import sql dari folder ./db</li>
-<li>jalanakan server melalui terminal <code>php spark serve</code></li>
+<li>buat database <code>"db_kost"</code> lalu import sql dari folder <code>./db</code></li>
+<li>jalanakan server melalui terminal dengan perintah : <code>php spark serve</code></li>
 </ul>
 
 
 <h3>Demo</h3>
-http://localhost:8080/Auth
+<a href="http://localhost:8080/Auth">http://localhost:8080/Auth</a>
 
 <h3>akses login Admin</h3>
 <br>
@@ -26,6 +26,6 @@ pass : 123456<br>
 email : bona@gmail.com<br>
 pass : @1q2W3e4r5t5t$<br>
 
+<br><br>
 
-
-<a>#error_paid_me() :)</a>
+<a href="#error_paid_me()">#error_paid_me() :)</a>
