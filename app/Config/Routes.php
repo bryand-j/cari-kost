@@ -45,7 +45,7 @@ $routes->group('admin',['filter' => 'admin'],function ($routes)
 
 $routes->group('/',['filter' => 'user'],function ($routes)
 {
-	$routes->get('Home', 'Dashboard::index');
+	$routes->get('Home', 'App::index');
 	$routes->get('', 'App::index');
 	$routes->get('Eksplor', 'Eksplor::index');
 	$routes->get('Favorit', 'Favorit::index');
