@@ -8,6 +8,7 @@
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="<?=base_url()?>/logo/logo.png" />
 		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" />
 		<!--end::Fonts-->
@@ -27,7 +28,7 @@
 				<!--begin::Content-->
 				<div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
 					<!--begin::Wrapper-->
-					<div class="w-lg-600px bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
+					<div class="col-12 col-lg-5 bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
 						<!--begin::Form-->
 						<form class="form w-100" method="POST" novalidate="novalidate" id="kt_sign_up_form" action="<?=base_url()?>/Auth/up">
 							<!--begin::Heading-->

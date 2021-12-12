@@ -9,6 +9,8 @@
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" />
 		<!--end::Fonts-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
 		<link href="<?=base_url()?>/user/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="<?=base_url()?>/user/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
@@ -24,7 +26,7 @@
 				<!--begin::Content-->
 				<div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
 
-					<div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
+					<div class="col-12 col-lg-4 bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
 						<!--begin::Form-->
 						<form class="form w-100" method="POST" novalidate="novalidate" id="kt_sign_in_form" action="<?=base_url()?>/Auth/in">
 							<!--begin::Heading-->
