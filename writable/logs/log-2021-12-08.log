@@ -1,0 +1,47 @@
+CRITICAL - 2021-12-08 00:03:12 --> Class "App\Controllers\Admin\UserModel" not found
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Kost->update()
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kost))
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}
+CRITICAL - 2021-12-08 00:03:53 --> Class "App\Controllers\Admin\UserModel" not found
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Kost->update()
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kost))
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}
+CRITICAL - 2021-12-08 00:05:01 --> Undefined constant "App\Controllers\Admin\this"
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Kost->update()
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kost))
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}
+CRITICAL - 2021-12-08 01:18:39 --> Trying to access array offset on value of type null
+#0 D:\APP\CI4\cari-kost\app\Controllers\Auth.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\APP\\CI4\\cari...', 64)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Auth->in()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-08 01:38:37 --> Undefined variable $data
+#0 D:\APP\CI4\cari-kost\app\Controllers\Profile.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 33)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Profile->Edit()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-08 23:38:29 --> Invalid file: admin/kost/formUpload.php
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/kost/form...')
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('admin/kost/form...', Array, true)
+#2 D:\APP\CI4\cari-kost\app\Controllers\admin\Kost.php(71): view('admin/kost/form...', Array)
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Admin\Kost->formUpload('3')
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kost))
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#8 {main}

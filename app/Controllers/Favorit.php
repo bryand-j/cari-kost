@@ -6,7 +6,7 @@ class Favorit extends BaseController
 
 	public function index()
 	{
-    $id_user='1';
+    $id_user=session()->get('id');
 		$Kost=new KostModel;
 		$data=[
 			'title'=>'Favorit',
@@ -17,7 +17,7 @@ class Favorit extends BaseController
 	}
 	public function set()
 	{
-    $id_user='1';
+    $id_user=session()->get('id');
 		$Kost=new KostModel;
     $id=$_GET['id'];
     $isfav=$Kost->favorit($id_user,$id);

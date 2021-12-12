@@ -53,7 +53,7 @@
 <?= view("admin/partials/_utils/crud") ?>
 <div id="modal-place">
 	<div class="modal fade" id="bry-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true" >
-		<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content" id="isi" >
 				
 			</div>
@@ -96,6 +96,12 @@ function formEdit(id) {
 		$('#isi').html(result);
 	});
   	
+}
+
+function addImg(id) {
+	Crud.getHtml('<?=$base?>/formUpload/'+id,(result)=> {
+		$('#isi').html(result);
+	});
 }
 
 </script>

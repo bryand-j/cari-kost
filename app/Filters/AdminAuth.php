@@ -9,9 +9,9 @@ class AdminAuth implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
 
-        if (!session()->get('Level')) {
+        if (!session()->get('role')) {
             session()->setFlashdata('error','Silahkan Login Terlebih Dahulu');
-        	return redirect()->to('./Login');
+        	return redirect()->to('/Auth');
         }
     }
 

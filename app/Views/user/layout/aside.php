@@ -98,7 +98,7 @@
           <!--begin::Menu item-->
           <div class="menu-item px-3">
             <div class="menu-content px-3 py-3">
-              <a class="btn btn-light-danger btn-sm px-4 " href="#">Log Out</a>
+              <a class="btn btn-link  text-danger btn-sm px-4 " href="<?=base_url()?>/Auth/out">Log Out</a>
             </div>
           </div>
           <!--end::Menu item-->

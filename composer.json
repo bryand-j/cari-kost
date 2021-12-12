@@ -1,7 +1,7 @@
 {
-	"name": "codeigniter4/app-eproyek",
+	"name": "codeigniter4/cari-kost",
 	"type": "project",
-	"description": "App Penggelolah Proyek",
+	"description": "Pencarian Kost",
 	"author":"Bryand-j",
 	"homepage": "https://github.com/Bryand-j",
 	"license": "MIT",

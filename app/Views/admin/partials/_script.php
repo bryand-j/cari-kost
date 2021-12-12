@@ -97,3 +97,4 @@
 		});
 		</script>
 		<script src="<?=base_url()?>/assets/js/pages/crud/ktdatatable/base/html-table1ff3.js?v=7.1.2"></script>
+		<script src="<?=base_url()?>/assets/plugins/custom/uppy/uppy.bundle.js"></script>

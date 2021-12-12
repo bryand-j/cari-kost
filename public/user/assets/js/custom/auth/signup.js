@@ -53,7 +53,7 @@ var KTSignupGeneral = (function () {
                   setTimeout(function () {
                     t.removeAttribute("data-kt-indicator"),
                       (t.disabled = !1)
-                      $('#kt_sign_up_submit').submit()
+                      $('#kt_sign_up_form').submit()
                   }, 1500))
                 : ""
             });

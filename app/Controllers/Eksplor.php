@@ -1,21 +1,23 @@
 <?php namespace App\Controllers;
 
 use App\Models\KostModel;
-use App\Models\PemilikModel;
+use App\Models\PenggunaModel;
 class Eksplor extends BaseController
 {
 
 	public function index()
 	{
+
 		$Kost=new KostModel;
-		$Pemilik=new PemilikModel;
+		$Pemilik=new PenggunaModel;
 		if (isset($_GET['detail'])) {
 			$id=$_GET['detail'];
-			
+			$db = db_connect();
 			$dt=$Kost->find($id);
 			$data=[
 				'title'=>$dt['nama'],
 				'data'=>$dt,
+				'foto'=>$db->table('foto')->where('id_kost',$id)->get()->getResultArray(),
 				'pemilik'=>$Pemilik->find($dt['id_pemilik'])
 			];
 			return view('user/eksplor/detail',$data);
@@ -27,10 +29,7 @@ class Eksplor extends BaseController
 		return view('user/eksplor/index',$data);
 		
 	}
-	public function detail($id=null)
-	{
-		
-	}
+
 
 	
 	//--------------------------------------------------------------------

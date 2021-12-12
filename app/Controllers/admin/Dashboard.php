@@ -12,10 +12,10 @@ class Dashboard extends BaseController
 		$data=[
 			"title" =>$this->title,
       "base"  =>$this->base,
-      "pengguna" =>$db->table('pengguna')->countAll(),
-      "pemilik" =>$db->table('pemilik')->countAll(),
-      "kost" =>$db->table('kost')->countAll(),
-      "admin" =>$db->table('user')->countAll(),
+      "pengguna" =>$db->table('pengguna')->where('delete_at',null)->get()->getNumRows(),
+      "pemilik" =>$db->table('pengguna')->where('delete_at',null)->where('pemilik','Ya')->get()->getNumRows(),
+      "kost" =>$db->table('kost')->where('delete_at',null)->get()->getNumRows(),
+      "admin" =>$db->table('user')->get()->getNumRows(),
 		];
 		return view('admin/dashboard/index',$data);
 	}

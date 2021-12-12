@@ -38,6 +38,7 @@
 						<div id="kt_aside_menu" class="aside-menu my-4" data-menu-vertical="1" data-menu-scroll="1" data-menu-dropdown-timeout="500">
 							<!--begin::Menu Nav-->
 							<ul class="menu-nav">
+								<?php if (session()->get('role') == 'Admin'): ?>
 								<li class="menu-item" aria-haspopup="true">
 									<a href="<?=base_url()?>/Admin/Dashboard" class="menu-link">
 										<i class="menu-icon flaticon2-poll-symbol"></i>
@@ -76,6 +77,15 @@
 										<span class="menu-text">admin</span>
 									</a>
 								</li>
+								<?php elseif (session()->get('pemilik') == 'Ya'): ?>
+								<li class="menu-item" aria-haspopup="true">
+									<a href="<?=base_url()?>/Admin/Kost" class="menu-link">
+										<i class="menu-icon fas fa-border-all"></i>
+										<span class="menu-text">Data Kost Saya</span>
+									</a>
+								</li>
+								<?php endif; ?>
+								
 							</ul>
 
 							

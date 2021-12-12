@@ -13,11 +13,11 @@ function isfav($id_user,$id_kost)
 	$data=$model->favorit($id_user,$id_kost);
 	if ($data) {
 		
-		return '<a href="#" id="'.$id_kost.'" onclick="setfav('.$id_kost.')" class="btn btn-icon btn-link btn-color-danger ">
+		return '<a  id="'.$id_kost.'" onclick="setfav('.$id_kost.')" class="btn btn-icon btn-link btn-color-danger ">
 							<i class="bi bi-heart-fill fs-3"></i>
 						</a>';
 	}
-	return '<a href="#" id="'.$id_kost.'" onclick="setfav('.$id_kost.')" class="btn btn-icon btn-link btn-color-white ">
+	return '<a  id="'.$id_kost.'" onclick="setfav('.$id_kost.')" class="btn btn-icon btn-link btn-color-white ">
 						<i class="bi bi-heart-fill fs-3"></i>
 					</a>';
 

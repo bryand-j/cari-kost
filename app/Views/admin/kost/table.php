@@ -12,7 +12,9 @@
     <th>Harga</th>
     <th>Jenis</th>
     <th>Alamat</th>
-    <th>Kordinat</th>
+    <?php if ($pemilik) :?>
+			<th>Action</th>
+		<?php endif;?>
   </tr>
 </thead>
 <tbody id="tb-data">
@@ -27,7 +29,24 @@
 	<td><?=$row['harga'] ?></td>
 	<td><?=$row['jenis'] ?></td>
 	<td><?=$row['alamat'] ?></td>
-	<td><?=$row['kordinat'] ?></td>
+  <?php if ($pemilik) :?>
+		<td nowrap="nowrap">
+		<div class="d-flex w-100">
+
+		
+		<a class="btn btn-sm btn-icon btn-light-primary mr-2" title="Upload Foto" href="#" onclick="addImg(<?=$row['id'] ?>)">
+			<i class="flaticon2-image-file"></i>
+		</a>
+		<a class="btn btn-sm btn-icon btn-light-success mr-2" title="edit" href="#" onclick="formEdit(<?=$row['id'] ?>)">
+			<i class="fas fa-pen"></i>
+		</a>
+		<a class="btn btn-sm btn-icon btn-light-danger" href="#" title="hapus" onclick="hapus(<?=$row['id'] ?>)">
+			<i class="flaticon2-rubbish-bin-delete-button"></i>
+		</a>
+		</div>
+		
+	</td>
+	<?php endif;?>
 
 </tr>
 <?php endforeach ?>

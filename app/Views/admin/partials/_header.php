@@ -15,15 +15,15 @@
 									<div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
 										<span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hallo,</span>
 										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">
-											<?=(session()->get('Nama')) ? session()->get('Nama') : session()->get('Username') ;?>
+											<?=(session()->get('username')) ? session()->get('username') : session()->get('email') ;?>
 											</span>
 										<span class="symbol symbol-lg-35 symbol-25 symbol-light-success">
 											<span class="symbol-label font-size-h5 font-weight-bold">
-												<?php if (session()->get('Nama')): ?>
+												<?php if (session()->get('email')): ?>
 													
-												<?=substr(session()->get('Nama'), 0,1); ?>
-												<?php elseif (session()->get('Username')): ?>
-												<?=substr(session()->get('Username'), 0,1); ?>
+												<?=substr(session()->get('email'), 0,1); ?>
+												<?php elseif (session()->get('username')): ?>
+												<?=substr(session()->get('username'), 0,1); ?>
 												<?php else:?>
 													Ad
 												<?php endif ?>

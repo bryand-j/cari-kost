@@ -2,7 +2,7 @@
 
 <?=$this->section("content"); ?>
 
-<?=view('admin/kost/subheader'); ?>
+<?=view('admin/dashboard/subheader'); ?>
 
 <div class="d-flex flex-column-fluid">
   <div class="container-fluid" >

@@ -12,9 +12,7 @@ class Filters extends BaseConfig
 		'toolbar' 	=> \CodeIgniter\Filters\DebugToolbar::class,
 		'honeypot' 	=> \CodeIgniter\Filters\Honeypot::class,
 		'admin' 	=> \App\Filters\AdminAuth::class,
-		'pegawai' 	=> \App\Filters\PegawaiAuth::class,
-		'konsultan' => \App\Filters\KonsultanAuth::class,
-		'kontraktor' => \App\Filters\KontraktorAuth::class,
+		'user' => \App\Filters\UserAuth::class,
 		'login' => \App\Filters\LoginAuth::class,
 	];
 

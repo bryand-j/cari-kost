@@ -9,40 +9,91 @@ class Kost extends BaseController
 
 	public function index()
 	{
-		$data=[
-			"title" =>$this->title,
-      "base"  =>$this->base
-		];
-		return view('admin/kost/index',$data);
+		if (session()->get('email')) {
+			$data=[
+				"title" =>$this->title,
+				"base"  =>$this->base,
+				"pemilik"=>session()->get('id')
+			];
+			return view('admin/kost/index',$data);
+		}
+
+		session()->setFlashdata('error','Silahkan Login Terlebih Dahulu');
+    return redirect()->to('/Auth');
 	}
 	public function table()
 	{
+		
 		$Kost=new KostModel;
+		$dtKost=$Kost->getAll();
+		if(session()->get('id')){
+			$dtKost=$Kost->getMy(session()->get('id'));
+		}
 		$data=[
 
-			"Kost"	=>$Kost->getAll()
+			"Kost"	=>$dtKost,
+			"pemilik"=>session()->get('id')
+			
 		];
 		return view('admin/kost/table',$data);
 	}
 	public function formEdit($id)
 	{
+		$db = db_connect();
 		$Kost=new KostModel;
 		$data=[
 			"title"	=>$this->title,
       "base"  =>$this->base,
-			"data"  =>$Kost->find($id)
+			"data"  =>$Kost->find($id),
+			"jenis"	=>$db->table('jenis')->get()->getResultArray()
 		];
 		return view('admin/kost/formEdit',$data);
 
 	}
 	public function formAdd()
 	{
-	
+		$db = db_connect();
 		$data=[
 			"title" =>$this->title,
-      "base"  =>$this->base
+      "base"  =>$this->base,
+			"jenis"	=>$db->table('jenis')->get()->getResultArray()
 		];
 		return view('admin/kost/formAdd',$data);
+
+	}
+	public function formUpload($id)
+	{
+		$data=[
+			"title"	=>$this->title,
+      "base"  =>$this->base,
+			"id"  =>$id,
+		];
+		return view('admin/kost/formUpload',$data);
+	}
+
+	public function upload($id=null)
+	{
+		$db = db_connect();
+		helper(['form', 'url','filesystem']);
+		if ($this->request->getFileMultiple('files')) {
+			$db->table('foto')->where(['id_kost'=>$id])->delete();
+			delete_files('uploads/'.$id, true);
+			foreach($this->request->getFileMultiple('files') as $file)
+			{   
+
+				$file->move('uploads/'.$id);
+
+				$data = [
+					'id_kost' =>  $id,
+					'foto' =>  $file->getClientName(),
+				];
+				
+				$db->table('foto')->insert($data);
+
+			}
+			
+ 		}
+		 
 
 	}
 
@@ -52,12 +103,13 @@ class Kost extends BaseController
 		$Kost=new KostModel;
 		$data=[
 			"nama"=>$this->request->getVar('nama'),
-			"id_pemilik"=>$this->request->getVar('id_pemilik'),
+			"id_pemilik"=>session()->get('id'),
 			"jumlah_kamar"=>$this->request->getVar('jumlah_kamar'),
 			"terisi"=>$this->request->getVar('terisi'),
+			"jenis"=>$this->request->getVar('jenis'),
+			"harga"=>$this->request->getVar('harga'),
 			"fasilitas"=>$this->request->getVar('fasilitas'),
 			"alamat"=>$this->request->getVar('alamat'),
-			"kordinat"=>$this->request->getVar('kordinat'),
 		];
 		$do=$Kost->save($data);
     if ($do) {
@@ -79,18 +131,19 @@ class Kost extends BaseController
 	public function update()
 	{
 
-		$User=new UserModel;
+		$Kost=new KostModel;
 		$data=[
 			"id"=>$this->request->getVar('id'),
-      "nama"=>$this->request->getVar('nama'),
-			"id_pemilik"=>$this->request->getVar('id_pemilik'),
+			"nama"=>$this->request->getVar('nama'),
+			"id_pemilik"=>session()->get('id'),
 			"jumlah_kamar"=>$this->request->getVar('jumlah_kamar'),
 			"terisi"=>$this->request->getVar('terisi'),
+			"jenis"=>$this->request->getVar('jenis'),
+			"harga"=>$this->request->getVar('harga'),
 			"fasilitas"=>$this->request->getVar('fasilitas'),
-      "alamat"=>$this->request->getVar('alamat'),
-			"kordinat"=>$this->request->getVar('kordinat'),
+			"alamat"=>$this->request->getVar('alamat'),
 		];
-		$do=$User->save($data);
+		$do=$Kost->save($data);
     if ($do) {
       $result=[
         'type'		=>'successs',

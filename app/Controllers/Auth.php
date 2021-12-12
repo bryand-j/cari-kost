@@ -1,6 +1,6 @@
 <?php namespace App\Controllers;
 
-use App\Models\UserModel;
+use App\Models\PenggunaModel;
 
 class Auth extends BaseController
 {
@@ -18,41 +18,70 @@ class Auth extends BaseController
 	{
 		return view('auth/signup');
 	}
-	public function out()
+	public function up()
 	{
-		$session=\Config\Services::session();
-		$session->destroy();
-		return redirect()->route('Login');
+		$User=new PenggunaModel;
+		$data=[
+			"nama"=>$this->request->getVar('name'),
+			"email"=>$this->request->getVar('email'),
+			"telepon"=>$this->request->getVar('no_wa'),
+			"password"=>$this->request->getVar('password'),
+		];
+		$do=$User->save($data);
+		if ($do) {
+			$session=\Config\Services::session();
+			$session->start();
+			$db = db_connect();
+			$ses=$db->table('pengguna')->where('email',$this->request->getVar('email'))->get()->getRowArray();
+			$session->set($ses);
+			return redirect()->to('/');
+		}
 		
+		
+
 	}
+	
 	public function in()
 	{
 		$session=\Config\Services::session();
 		$session->start();
 
-
-		$UserModel=new UserModel;
-
-		$username=$this->request->getVar('username');
+		$email=$this->request->getVar('email');
 		$password=$this->request->getVar('password');
 
 
-		$admin=$UserModel->login($username,$password);
+		$db = db_connect();
+		$ses=$db->table('pengguna')
+						->where('email',$email)
+						->where('password',$password)
+						->get()->getRowArray();
+		$admin=$db->table('user')->where('password',$password)->get()->getRowArray();
 		
-		if (!empty($admin)) {
-			$session->set([
-				'Username'=>$username,
-				'Level'=>$admin['level'],
-				'ID_User'=>$admin['id_user']
-			]);
-			return redirect()->route('admin/Dashboard');
-			
+		if (!empty($ses)) {
+			$session->set($ses);
+			return redirect()->to('/');
+		}
+		else if(($admin) && ($admin['username'].'@admin'==$email)){
+			$ses=[
+				'email'=>$admin['username'],
+				'role'=>'Admin',
+			];
+			$session->set($ses);
+			return redirect()->to('/Admin/Dashboard');
 		}
 		
 		else{
-			session()->setFlashdata('error','Username Atau Password Salah');
-			return redirect()->to('Login');
+			session()->setFlashdata('error','Email Atau Password Tidak Terdaftar');
+			return redirect()->to('Auth');
 		}
+		
+	}
+
+	public function out()
+	{
+		$session=\Config\Services::session();
+		$session->destroy();
+		return redirect()->to('Auth');
 		
 	}
 

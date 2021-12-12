@@ -23,10 +23,32 @@
           </div>
           <div class="row g-5">
             <div class="col-12 col-lg-8">
-              <img class="cropimg rounded" src="<?=base_url()?>/user/assets/media/stock/600x600/img-22.jpg" alt="Kost">
+              <img class="cropimg rounded" src="<?=base_url().'/'.'uploads/'.$data['id'].'/'.$foto[0]['foto']?>" alt="Kost">
+              <div class="row g-5 mt-5">
+              <?php foreach ($foto as $key) :?>
+                <div class="col-4 col-md-2">
+                  <a class="d-block overlay " data-fslightbox="lightbox-basic" href="<?=base_url().'/'.'uploads/'.$data['id'].'/'.$key['foto']?>">
+                    <!--begin::Image-->
+                    <div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-100px"
+                        style="background-image:url('<?=base_url().'/'.'uploads/'.$data['id'].'/'.$key['foto']?>')">
+                    </div>
+                    <!--end::Image-->
+
+                    <!--begin::Action-->
+                    <div class="overlay-layer card-rounded bg-dark bg-opacity-25 shadow">
+                        <i class="bi bi-fullscreen text-white fs-2x"></i>
+                    </div>
+                    <!--end::Action-->
+                  </a>
+                </div>
+                <?php endforeach ;?>
+              </div>
+            
+              
             </div>
-            <div class="col-12 col-lg-4 border-gray-300 border-dashed rounded p-3">
-              <div class="mb-5">
+
+            <div class="col-12 col-lg-4">
+              <div class="mb-5 border-gray-300 border-dashed rounded p-3">
                 <h4 class="text-black mb-7"><?=$title?></h4>
                 <div class="d-flex flex-stack fw-bold fs-5 text-muted mb-2">
                   <a href="#" class="text-muted text-hover-primary pe-2">Katogory</a>
@@ -55,7 +77,7 @@
                   <div class="m-0 fs-2 text-success"><?=rupiah($data['harga'])?> <small>/bulan</small></div>
                 </div>
                 <div class="d-flex  fw-bold fs-5 mt-10 justify-content-center">
-                  <a href="https://wa.me/<?=$pemilik['no_wa']?>?text=Hallo, Saya ingin Bertanya Tentang Kost <?=$title?>" target="blank" class="btn btn-success me-3"><i class="bi bi-whatsapp fs-4 me-2"></i>Whatsapp</a>
+                  <a href="https://wa.me/<?=$pemilik['telepon']?>?text=Hallo, Saya ingin Bertanya Tentang Kost <?=$title?>" target="blank" class="btn btn-success me-3"><i class="bi bi-whatsapp fs-4 me-2"></i>Whatsapp</a>
                   <a href="mailto:<?=$pemilik['email']?>" class="btn btn-secondary" target="blank"><i class="bi bi-envelope fs-4 me-2"></i>Email</a>
                 </div> 
               </div>
@@ -73,5 +95,5 @@
 </div>
 <?=$this->endSection(); ?>
 <?=$this->section("script"); ?>
-
+<script src="<?=base_url()?>/user/assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
 <?=$this->endSection(); ?>

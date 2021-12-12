@@ -16,7 +16,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('App');
+$routes->setDefaultController('Auth');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -32,8 +32,25 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 
 //Admin Routes
-// $routes->get('Login', 'Login::index',["filter"=>"login"]);
+$routes->get('Auth', 'Auth::index',["filter"=>"login"]);
+$routes->get('admin/Kost', 'Admin/Kost::index');
 
+$routes->group('admin',['filter' => 'admin'],function ($routes)
+{
+	$routes->get('Dashboard', 'Admin\Dashboard::index');
+	$routes->get('Pengguna', 'Admin\Pengguna::index');
+	$routes->get('User', 'Admin\User::index');
+	$routes->get('Pemilik', 'Admin\Pemilik::index');
+});
+
+$routes->group('/',['filter' => 'user'],function ($routes)
+{
+	$routes->get('Home', 'Dashboard::index');
+	$routes->get('', 'App::index');
+	$routes->get('Eksplor', 'Eksplor::index');
+	$routes->get('Favorit', 'Favorit::index');
+	$routes->get('Profile', 'Profile::index');
+});
 
 // $routes->get('admin/Dashboard', 'admin\Dashboard::index',["filter"=>"admin"]);
 // $routes->get('admin/KategoriBerita', 'admin\KategoriBerita::index',["filter"=>"admin"]);

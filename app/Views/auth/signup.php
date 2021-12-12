@@ -6,6 +6,7 @@
 	<head>
 		<title>Daftar Akun Baru</title>
 		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="<?=base_url()?>/logo/logo.png" />
 		
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" />
@@ -28,10 +29,12 @@
 					<!--begin::Wrapper-->
 					<div class="w-lg-600px bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
 						<!--begin::Form-->
-						<form class="form w-100" novalidate="novalidate" id="kt_sign_up_form" action="<?=base_url()?>/Auth/up">
+						<form class="form w-100" method="POST" novalidate="novalidate" id="kt_sign_up_form" action="<?=base_url()?>/Auth/up">
 							<!--begin::Heading-->
 							<div class="mb-10 text-center">
 								<!--begin::Title-->
+      					<h1 class="text-dark fw-bolder my-1 fs-2"><img src="<?=base_url()?>/logo/logo.png" alt="logo" height="30">
+
 								<h1 class="text-dark mb-3">Buat Akun</h1>
 								<!--end::Title-->
 								<!--begin::Link-->

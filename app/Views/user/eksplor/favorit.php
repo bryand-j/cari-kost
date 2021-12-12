@@ -12,9 +12,10 @@
         <div class="card-body d-flex flex-column justify-content-between h-100">
           <!--begin::Input wrapper-->
           <div class=" position-relative">
-              <!--begin::Input-->
-              <input type="search" class="form-control form-control-solid form-control-lg " placeholder="Cari" name="Cari Kost"/>
+            <form action="<?=base_url()?>/Eksplor">
+              <input type="text" class="form-control form-control-solid form-control-lg " placeholder="Cari * (Nama kost, Alamat, Harga, Kategori)" name="q"/>
               <!--end::Input-->
+            </form>
 
               <!--begin::CVV icon-->
               <div class="position-absolute translate-middle-y top-50 end-0 me-3">
@@ -39,11 +40,11 @@
             }
             foreach ($data as $kost) :?>
             <div class="mb-5 col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card card-bordered card-flush card-stretch my-card" style="background-image:url('<?=base_url()?>/user/assets/media/stock/600x600/img-22.jpg')">
+              <div class="card card-bordered card-flush card-stretch my-card" style="background-image:url('<?=base_url().'/'.'uploads/'.$kost['id'].'/'.$kost['foto']?>')">
                 <div class="card-header mb-n10">
                     <h3 class="card-title"></h3>
                     <div class="card-toolbar me-n8 mt-n6 ">
-                      <?=isfav('1',$kost['id'])?>
+                      <?=isfav(session()->get('id'),$kost['id'])?>
                     </div>
                 </div>
                 <a href="<?=base_url()?>/Eksplor?detail=<?=$kost['id']?>" class="card-body h-150px"></a>
@@ -73,8 +74,4 @@
 <?=$this->endSection(); ?>
 <?=$this->section("script"); ?>
 
-<script src="">
-  // ini script
-  alert('ok');
-</script>
 <?=$this->endSection(); ?>

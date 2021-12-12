@@ -9,20 +9,12 @@ class LoginAuth implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
 
-        if (session()->get('Level')=='Pegawai') {
-        	return redirect()->to('/pegawai/Dashboard');
+        if (session()->get('role')=='Admin') {
+        	return redirect()->to('/Admin/Dashboard');
         }
-        else if (session()->get('Level')=='Admin')
+        else if (session()->get('id'))
         {
         	return redirect()->to('/');
-        }
-        else if (session()->get('Level')=='Kontraktor')
-        {
-            return redirect()->to('/kontraktor/Dashboard');
-        }
-        else if (session()->get('Level')=='Konsultan')
-        {
-            return redirect()->to('/konsultan/Dashboard');
         }
     }
 

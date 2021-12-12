@@ -19,6 +19,7 @@
 		<link href="<?=base_url()?>/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
 
 		<!--end::Page Vendors Styles-->
+		<link href="<?=base_url()?>/assets/plugins/custom/uppy/uppy.bundle.css?v=7.2.9" rel="stylesheet" type="text/css" />
 
 		<!--begin::Global Theme Styles(used by all pages)-->
 		<link href="<?=base_url()?>/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
@@ -37,7 +38,7 @@
 		<link rel="icon" href="<?=base_url()?>/logo/logo.png" />
 		<style>
 *::-webkit-scrollbar {
-    width: 0.8em;
+    width: 0.5em;
 }
  
 *::-webkit-scrollbar-track {
@@ -47,13 +48,13 @@
 }
  
 *::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: lightgrey;
   border-radius:100em;
 
   
 }
 *::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(117, 117, 117);
+  background-color: rgba(117, 117, 117,0.5);
 }
 *::-webkit-scrollbar-button{
   height: 2px;

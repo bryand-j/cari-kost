@@ -14,6 +14,7 @@ class PenggunaModel extends Model
       'email',
       'telepon',
       'password',
+      'pemilik',
     ];
     protected $useSoftDeletes = true;
     protected $useTimestamps = true;
@@ -26,5 +27,16 @@ class PenggunaModel extends Model
       return $this->db->table('pengguna')->where('pemilik','Ya')->where('delete_at',null)
       ->get()->getResultArray();
     }
+    public function jkost($id)
+    {
+      return $this->db->table('kost')->where('id_pemilik',$id)->where('delete_at',null)
+      ->get()->getNumRows();
+    }
+    public function isPemilik($id)
+    {
+      return $this->db->table('pengguna')->where('id',$id)->where('pemilik','Ya')
+      ->get()->getNumRows();
+    }
+
 
 }

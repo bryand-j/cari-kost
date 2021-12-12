@@ -15,7 +15,9 @@
 		</div>
 		<!--end::Info-->
 		<!--begin::Toolbar-->
-		
+			<?php if ($pemilik) :?>
+				<a href="#" class="btn btn-light-primary font-weight-bolder btn-sm" id="add-new">Tambah Data</a>
+			<?php endif;?>
 		<!--end::Toolbar-->
 	</div>
 </div>

@@ -4,7 +4,7 @@
     <!--begin::Page title-->
     <div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-2 pb-2 pb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
       <!--begin::Heading-->
-      <h1 class="text-dark fw-bolder my-1 fs-2">Cari Kost
+      <h1 class="text-dark fw-bolder my-1 fs-2"><img src="<?=base_url()?>/logo/logo.png" alt="logo" height="30">
       <small class="text-muted fs-6 fw-normal ms-1"></small></h1>
       <!--end::Heading-->
       <!--begin::Breadcrumb-->
