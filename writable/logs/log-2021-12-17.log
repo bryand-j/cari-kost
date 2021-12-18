@@ -1,0 +1,11 @@
+CRITICAL - 2021-12-17 00:34:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\APP\CI4\cari-kost\app\Controllers\Auth.php(57): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Auth->in()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#8 {main}
