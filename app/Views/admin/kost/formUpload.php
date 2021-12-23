@@ -1,5 +1,5 @@
 <div class="modal-header">
-	<h5 class="modal-title" id="exampleModalLabel">Tambah Data <?=$title ?></h5>
+	<h5 class="modal-title" id="exampleModalLabel">Upload Foto <?=$title ?></h5>
 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<i aria-hidden="true" class="ki ki-close"></i>
 	</button>
@@ -7,7 +7,6 @@
 <form id="add-form" action="" method="_post">
 	<div class="modal-body" style="max-height: 500px; overflow: auto;">
 		<div class="form-group">
-			<label class="">Upload Foto</label>
 			<div class="uppy" id="kt_uppy_2">
 				<div class="uppy-dashboard"></div>
 				<div class="uppy-progress"></div>
@@ -87,5 +86,4 @@ KTUtil.ready(function() {
 	KTUppy.init();
 });
 
-	$("#bry-modal").modal("show");
 </script>

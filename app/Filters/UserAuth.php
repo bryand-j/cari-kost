@@ -10,6 +10,9 @@ class UserAuth implements FilterInterface
     {
 
         if (!session()->get('id')) {
+            if($request->uri->getPath()=="/"){
+                return redirect()->to('/Auth');
+            }
             session()->setFlashdata('error','Silahkan Login Terlebih Dahulu');
         	return redirect()->to('/Auth');
         }

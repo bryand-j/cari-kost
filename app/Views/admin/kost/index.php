@@ -6,6 +6,15 @@
 
 <div class="d-flex flex-column-fluid">
   <div class="container-fluid" >
+	<div class="dropdown my-drop" style="position: absolute;">
+		<button class="btn btn-secondary dropdown-toggle d-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown button
+		</button>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="#" onclick="ubah()">Ubah</a>
+				<a class="dropdown-item" href="#" onclick="hapuss()">Hapus</a>
+		</div>
+	</div>
 
     <!--begin::Row-->
     <div class="row">
@@ -32,10 +41,12 @@
 							</div>
 						</div>
 					</div>
-
+				
 				<div id="dt-table"></div>
           
         </div>
+				
+
         <!-- end:: card body-->
 
       </div>
@@ -55,7 +66,11 @@
 	<div class="modal fade" id="bry-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true" >
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content" id="isi" >
-				
+				<div class="modal-body row justify-content-center align-items-center" style="height: 500px; overflow: auto;">
+					<h5 class="mr-2">Memuat... </h5>
+					<div class="spinner spinner-primary "> </div>
+					
+				</div>
 			</div>
 		</div>
 	</div>
@@ -66,6 +81,7 @@
 
 <script>
 const tb_url='<?=$base?>/table';
+let idd=0;
 
 //tampil tabel
 
@@ -104,6 +120,27 @@ function addImg(id) {
 	});
 }
 
+ function coba (e ,id) {
+	// that.preventDefault();
+	console.log(e)
+	e.preventDefault()
+	$(".my-drop")
+	.css({
+      top: e.clientY,
+      left: e.clientX
+    });
+	$(".my-drop .dropdown-toggle").dropdown('show')
+
+		idd=id
+
+ }
+
+ function ubah() {
+	formEdit(idd)
+ }
+
+
 </script>
+
 
 <?=$this->endSection(); ?>

@@ -17,6 +17,14 @@ class Profile extends BaseController
 		return view('user/user/profile',$data);
 		
 	}
+
+	// public function myKost()
+	// {
+	// 	$data=[
+	// 		'title'=>'Kost Saya',
+	// 	];
+	// 	return view('user/user/kost',$data);
+	// }
 	public function set()
 	{
 		$id=session()->get('id');

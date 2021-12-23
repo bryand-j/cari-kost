@@ -50,6 +50,8 @@ $routes->group('/',['filter' => 'user'],function ($routes)
 	$routes->get('Eksplor', 'Eksplor::index');
 	$routes->get('Favorit', 'Favorit::index');
 	$routes->get('Profile', 'Profile::index');
+	$routes->get('ManageKost', 'Admin/Kost::index');
+
 });
 
 // $routes->get('admin/Dashboard', 'admin\Dashboard::index',["filter"=>"admin"]);

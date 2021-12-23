@@ -31,7 +31,6 @@
 
 
 <script>
-	$("#bry-modal").modal("show");
 	$('#toggle').click(function(event) {
 		if ($('#passworde').attr('type') =='password') {
 			$('#passworde').attr('type', 'text');

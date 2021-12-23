@@ -52,7 +52,9 @@
 				})
 			},
 			getHtml: (url,result)=>{
-				$("#load-m").modal("show");
+				const spinner = $('#load-m').html()
+				$('#isi').html(spinner);
+				$("#bry-modal").modal("show");
 				$.ajax({
 					url: '<?=base_url()?>/'+url,
 				})
@@ -60,11 +62,13 @@
 				.fail(function(res) {
 					console.log(res);
 					Dialog.toast('error',`[${res.status}] `+res.statusText);
+					$("#bry-modal").modal("hide");
 				})
 				.always(function(result){
 					if(result){
 						setTimeout(() => {
-							$("#load-m").modal("hide");
+							
+							
 						}, 400);
 					}
 					
@@ -145,7 +149,8 @@
 		}
 
 		function getTable(url){
-			$("#load-m").modal("show");
+			const spinner = $('#load-tb').html()
+			$('#dt-table').html(spinner);
 			$.ajax({
 					url: '<?=base_url()?>/'+url,
 				})
@@ -159,9 +164,7 @@
 				})
 				.always(function(res){
 					if(res){
-						setTimeout(() => {
-							$("#load-m").modal("hide");
-						}, 400);
+						
 					}
 					
 				})

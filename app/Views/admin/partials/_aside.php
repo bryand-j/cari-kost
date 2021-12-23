@@ -79,7 +79,7 @@
 								</li>
 								<?php elseif (session()->get('pemilik') == 'Ya'): ?>
 								<li class="menu-item" aria-haspopup="true">
-									<a href="<?=base_url()?>/Admin/Kost" class="menu-link">
+									<a href="<?=base_url()?>/ManageKost" class="menu-link">
 										<i class="menu-icon fas fa-border-all"></i>
 										<span class="menu-text">Data Kost Saya</span>
 									</a>

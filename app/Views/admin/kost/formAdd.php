@@ -59,7 +59,7 @@
 		}
 		$('.fa-eye , .fa-eye-slash').toggleClass('d-none');
 	});
-	$("#bry-modal").modal("show");
+	
 	$('#isi #add-form').submit(function(event) {
 			const btn = KTUtil.getById("kt_btn_1");
 			event.preventDefault();

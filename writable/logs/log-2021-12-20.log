@@ -1,0 +1,24 @@
+CRITICAL - 2021-12-20 08:25:59 --> Undefined variable $dt
+#0 D:\APP\CI4\cari-kost\app\Controllers\Profile.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 25)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Profile->myKost()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-20 08:26:21 --> Undefined variable $dt
+#0 D:\APP\CI4\cari-kost\app\Controllers\Profile.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 25)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Profile->myKost()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}
+CRITICAL - 2021-12-20 08:26:57 --> Undefined variable $dt
+#0 D:\APP\CI4\cari-kost\app\Controllers\Profile.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\APP\\CI4\\cari...', 25)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Profile->myKost()
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#6 {main}

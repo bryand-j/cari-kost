@@ -20,6 +20,7 @@
 <tbody id="tb-data">
 <?php $no=1; foreach ($Kost as $row): ?>
 <tr>
+<!-- oncontextmenu="coba(event,<?=$row['id'] ?>)" -->
 	<td class="text-center"><?=$no++ ?></td>
 	<td><?=$row['nama'] ?></td>
 	<td><?=$row['nmpemilik'] ?></td>

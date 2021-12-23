@@ -1,0 +1,28 @@
+CRITICAL - 2021-12-18 07:32:53 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::path()
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Filters\Filters.php(169): App\Filters\UserAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}
+CRITICAL - 2021-12-18 07:33:17 --> Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$path
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Filters\Filters.php(169): App\Filters\UserAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}
+CRITICAL - 2021-12-18 07:33:18 --> Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$path
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Filters\Filters.php(169): App\Filters\UserAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}
+CRITICAL - 2021-12-18 08:19:53 --> Cannot access protected property CodeIgniter\HTTP\URI::$path
+#0 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Filters\Filters.php(169): App\Filters\UserAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\APP\CI4\cari-kost\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\APP\CI4\cari-kost\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\APP\\CI4\\cari...')
+#5 {main}

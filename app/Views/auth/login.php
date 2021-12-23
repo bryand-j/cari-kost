@@ -59,7 +59,7 @@
 									<!--begin::Wrapper-->
 									<div class="d-flex flex-column pe-0 pe-sm-10">
 											<!--begin::Title-->
-											<h5 class="mb-1">Login Gagal</h5>
+											<h5 class="mb-1">Gagal</h5>
 											<!--end::Title-->
 											<!--begin::Content-->
 											<span><?=session()->getFlashdata('error')?></span>

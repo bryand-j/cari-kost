@@ -35,7 +35,28 @@ var KTDatatableHtmlTableDemo = function() {
 	                width: 120,
 	                textAlign: 'center',
             	}
-            ]
+      ],
+			translate: {
+				records: {
+						processing: 'Memuat...',
+						noRecords: 'Tidak Ada Data',
+				},
+				toolbar: {
+						pagination: {
+								items: {
+										default: {
+												first: 'Pertama',
+												prev: 'Sebelumnya',
+												next: 'Berikutnya',
+												last: 'Terakhir',
+												more: 'Lainya',
+												select: 'Pilih Jumlah per halaman',
+										},
+										info: 'Menampilkan  {{start}} - {{end}} dari {{total}} data',
+								},
+						},
+				},
+			}
 		});
 
 
