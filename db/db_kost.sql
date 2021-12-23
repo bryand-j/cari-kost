@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2021 at 01:02 PM
+-- Generation Time: Dec 23, 2021 at 01:17 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -42,8 +42,9 @@ INSERT INTO `favorit` (`id_user`, `id_kost`) VALUES
 ('2', '1'),
 ('2', '2'),
 ('2', '3'),
-('3', '3'),
-('3', '1');
+('3', '2'),
+('6', '6'),
+('6', '7');
 
 -- --------------------------------------------------------
 
@@ -69,7 +70,12 @@ INSERT INTO `foto` (`id_kost`, `foto`) VALUES
 ('5', '1.jpg'),
 ('5', '6.jpg'),
 ('5', '7.jpg'),
-('1', '10.jpg');
+('1', '10.jpg'),
+('7', 'aaaa.PNG'),
+('7', 'Capture.PNG'),
+('6', 'img-12.jpg'),
+('6', 'img-15.jpg'),
+('6', 'img-16.jpg');
 
 -- --------------------------------------------------------
 
@@ -122,7 +128,9 @@ INSERT INTO `kost` (`id`, `nama`, `id_pemilik`, `jumlah_kamar`, `terisi`, `fasil
 (2, 'Kost EFG', 2, '6', '0', '-Wifi 24 Jam\r\n-Tv\r\n-Ac', '400000', 'Umum', 'Jl. Lasian KM 10 Kota Kupang NTT', '1010,10100', NULL, NULL, NULL),
 (3, 'Kost Pyra', 3, '100', '10', 'kdkc', '400000', 'Pria', 'kdkckd', '', '2021-12-07 23:48:31', '2021-12-08 00:05:40', NULL),
 (4, 'Kost kkd', 3, '20', '10', 'fgggo', '500000', 'Wanita', 'llgl', '', '2021-12-08 00:09:52', '2021-12-08 00:10:07', '2021-12-08 00:10:07'),
-(5, 'Kost Lumiana', 2, '20', '12', 'jodfjof\r\nfgfhgfh\r\nfghg\r\ngghgjh\r\nghjhjh', '10000000', 'Umum', 'lasiana kupang ntt', '', '2021-12-09 07:14:35', '2021-12-09 07:14:35', NULL);
+(5, 'Kost Lumiana', 2, '20', '12', 'jodfjof\r\nfgfhgfh\r\nfghg\r\ngghgjh\r\nghjhjh', '10000000', 'Umum', 'lasiana kupang ntt', '', '2021-12-09 07:14:35', '2021-12-09 07:14:35', NULL),
+(6, 'Kost ABC', 6, '20', '10', 'Lengkap z', '700000', 'Umum', 'Jl. Adisucipto no 20 Ambon', '', '2021-12-18 07:21:27', '2021-12-20 06:34:59', NULL),
+(7, 'Kost Leter U', 6, '30', '11', 'jnieonoifv\r\ngtrthy\r\nyjyuj', '400000', 'Umum', 'jdjd', '', '2021-12-20 05:21:13', '2021-12-20 06:51:23', NULL);
 
 -- --------------------------------------------------------
 
@@ -133,7 +141,7 @@ INSERT INTO `kost` (`id`, `nama`, `id_pemilik`, `jumlah_kamar`, `terisi`, `fasil
 CREATE TABLE `pengguna` (
   `id` int(10) NOT NULL,
   `nama` varchar(50) NOT NULL,
-  `email` varchar(20) NOT NULL,
+  `email` varchar(200) NOT NULL,
   `pemilik` varchar(10) NOT NULL DEFAULT 'Tidak',
   `telepon` varchar(20) NOT NULL,
   `password` varchar(50) NOT NULL,
@@ -149,7 +157,8 @@ CREATE TABLE `pengguna` (
 INSERT INTO `pengguna` (`id`, `nama`, `email`, `pemilik`, `telepon`, `password`, `create_at`, `update_at`, `delete_at`) VALUES
 (1, 'bryand j', 'bry@gmail.com', 'Tidak', '0821847576', '123456', NULL, NULL, NULL),
 (2, 'Anton L', 'anton@gmail.com', 'Ya', '0821847576', '123456', NULL, NULL, NULL),
-(3, 'Bonaventura', 'bona@gmail.com', 'Ya', '08223456789', '@1q2W3e4r5t5t$', '2021-12-07 21:08:40', '2021-12-07 21:27:05', NULL);
+(3, 'Bonaventura', 'bona@gmail.com', 'Ya', '08223456789', '@1q2W3e4r5t5t$', '2021-12-07 21:08:40', '2021-12-07 21:27:05', NULL),
+(6, 'Hisyam Ailatat', 'HisyamAilatat@gmail.com', 'Ya', '081247690795', '1Q2w3e4r5t$', '2021-12-18 05:09:21', '2021-12-18 05:17:06', NULL);
 
 -- --------------------------------------------------------
 
@@ -169,9 +178,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `level`, `username`, `password`) VALUES
-(2, 'Admin', 'admin123', '1234561212'),
 (10, 'Admin', 'admin', '123456'),
-(13, 'Admin', 'bryand-j', '12345');
+(13, 'Admin', 'Hisyam', '1q2w3e4r5t'),
+(16, 'Admin', 'bry', '1q2w3e4r5t');
 
 --
 -- Indexes for dumped tables
@@ -217,19 +226,19 @@ ALTER TABLE `jenis`
 -- AUTO_INCREMENT for table `kost`
 --
 ALTER TABLE `kost`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_user` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
