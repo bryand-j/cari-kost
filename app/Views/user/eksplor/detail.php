@@ -77,7 +77,7 @@
                   <div class="m-0 fs-2 text-success"><?=rupiah($data['harga'])?> <small>/bulan</small></div>
                 </div>
                 <div class="d-flex  fw-bold fs-5 mt-10 justify-content-center">
-                  <a href="https://wa.me/<?=$pemilik['telepon']?>?text=Hallo, Saya ingin Bertanya Tentang Kost <?=$title?>" target="blank" class="btn btn-success me-3"><i class="bi bi-whatsapp fs-4 me-2"></i>Whatsapp</a>
+                  <a href="https://wa.me/+62<?=$pemilik['telepon']?>?text=Hallo, Saya ingin Bertanya Tentang Kost <?=$title?>" target="blank" class="btn btn-success me-3"><i class="bi bi-whatsapp fs-4 me-2"></i>Whatsapp</a>
                   <a href="mailto:<?=$pemilik['email']?>" class="btn btn-secondary" target="blank"><i class="bi bi-envelope fs-4 me-2"></i>Email</a>
                 </div> 
               </div>

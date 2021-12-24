@@ -36,7 +36,7 @@ var KTUppy = function () {
 			inline: true,
 			replaceTargetContent: true,
 			showProgressDetails: true,
-			note: '2–3 file, up to 2 MB',
+			note: 'max 5 file',
 			height: 300,
 			metaFields: [
 				{ id: 'name', name: 'Name', placeholder: 'file name' },
@@ -48,7 +48,7 @@ var KTUppy = function () {
 		var uppyDashboard = Uppy.Core({
 			autoProceed: true,
 			restrictions: {
-				maxFileSize: 2000000, // 1mb
+				maxFileSize: 9000000, // 1mb
 				maxNumberOfFiles: 5,
 				minNumberOfFiles: 1,
 				allowedFileTypes: ['image/*']
