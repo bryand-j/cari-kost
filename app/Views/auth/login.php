@@ -15,6 +15,7 @@
 		<link href="<?=base_url()?>/user/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="<?=base_url()?>/user/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
+	
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -113,6 +114,14 @@
 							</div>
 							<!--end::Actions-->
 						</form>
+						<!-- <div id="firebaseui-auth-container"></div> -->
+							<!--begin::Separator-->
+							<div class="text-center text-muted text-uppercase fw-bolder mb-5">atau</div>
+							<!--end::Separator-->
+							<!--begin::Google link-->
+							<a href="#" id="my-g-auth" class="btn btn-flex flex-center btn-light btn-lg w-100 mb-5">
+								<img alt="Logo" src="<?=base_url()?>/user/assets/media/svg/brand-logos/google-icon.svg" class="h-20px me-3" />Lanjutkan Dengan Google
+							</a>
 						<!--end::Form-->
 					</div>
 					<!--end::Wrapper-->
@@ -130,6 +139,44 @@
 		<script src="<?=base_url()?>/user/assets/js/custom/auth/general.js"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
+\
+		<script src="https://apis.google.com/js/api:client.js"></script>
+		<script>
+		var googleUser = {};
+		var startApp = function() {
+			gapi.load('auth2', function(){
+				// Retrieve the singleton for the GoogleAuth library and set up the client.
+				auth2 = gapi.auth2.init({
+					client_id: '506367721533-a1giv8t8efk6tg9dccifmc6ilkql3vql.apps.googleusercontent.com',
+					cookiepolicy: 'single_host_origin',
+					// Request scopes in addition to 'profile' and 'email'
+					//scope: 'additional_scope'
+				});
+				attachSignin(document.getElementById('my-g-auth'));
+			});
+		};
+
+		function attachSignin(element) {
+			console.log(element.id);
+			auth2.attachClickHandler(element, {},
+					function(googleUser) {
+						profile=googleUser.getBasicProfile();
+						$.ajax({
+							type: 'POST',
+							dataType:'JSON',
+							url: '<?=base_url()?>/Auth/google',
+							data: {id:profile.getId(), name:profile.getName(), email:profile.getEmail(), image:profile.getImageUrl()}
+							}).done(function(data){
+								window.location.href = '<?=base_url()?>'+data.to;
+							}).fail(function() {
+								alert( "GAGAL" );
+						});
+					}, function(error) {
+						console.log(error);
+					});
+		}
+		</script>
+  	<script>startApp();</script>
 	</body>
 	<!--end::Body-->
 </html>

@@ -18,13 +18,6 @@ class Profile extends BaseController
 		
 	}
 
-	// public function myKost()
-	// {
-	// 	$data=[
-	// 		'title'=>'Kost Saya',
-	// 	];
-	// 	return view('user/user/kost',$data);
-	// }
 	public function set()
 	{
 		$id=session()->get('id');
@@ -51,6 +44,7 @@ class Profile extends BaseController
 	{
 		$User=new PenggunaModel;
 		$data=[
+			"id"=>session()->get('id'),
 			"nama"=>$this->request->getVar('name'),
 			"email"=>$this->request->getVar('email'),
 			"telepon"=>$this->request->getVar('no_wa'),

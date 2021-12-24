@@ -40,6 +40,47 @@ class Auth extends BaseController
 		
 
 	}
+	public function google()
+	{
+		
+		$session=\Config\Services::session();
+		$session->start();
+		$email=$this->request->getVar('email');
+		$password= md5($this->request->getVar('id'));
+		$db = db_connect();
+		$ses=$db->table('pengguna')
+						->where('email',$email)
+						->get()->getRowArray();
+		if (empty($ses)) {
+			$data=[
+				"nama"=>$this->request->getVar('name'),
+				"email"=>$this->request->getVar('email'),
+				"password"=>md5($this->request->getVar('id')),
+			];
+			$User=new PenggunaModel;
+			$do=$User->save($data);
+		
+			if ($do) {
+				$ses=$db->table('pengguna')
+						->where('email',$email)
+						->where('password',$password)
+						->get()->getRowArray();
+				$ses['image']=$this->request->getVar('image');
+				$session->set($ses);
+				echo json_encode(['to'=>'/Profile/edit']);
+			}
+
+		}
+		else{
+			$ses=$db->table('pengguna')
+						->where('email',$email)
+						->where('password',$password)
+						->get()->getRowArray();
+			$session->set($ses);
+			echo json_encode(['to'=>'/']);
+		}
+		
+	}
 	
 	public function in()
 	{
